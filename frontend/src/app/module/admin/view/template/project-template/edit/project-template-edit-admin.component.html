@@ -1,0 +1,86 @@
+        <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'projectTemplate.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'projectTemplate.tabPan' | translate}}">
+                        <div class="grid">
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="1">{{'projectTemplate.code' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'projectTemplate.code' | translate}}" id="1" [(ngModel)]="item.code"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validProjectTemplateCode}"  />
+                                            <small class='p-error' *ngIf='!validProjectTemplateCode'>Code est obligatoire.</small>
+                                        </div>
+
+
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="2">{{'projectTemplate.name' | translate}}</label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'projectTemplate.name' | translate}}" id="2" [(ngModel)]="item.name"
+                                                     />
+                                            
+                                        </div>
+
+
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="3">{{'projectTemplate.addingDate' | translate}}</label>
+                                            <p-calendar appendTo="body" id="3"  [showTime]="true" [showSeconds]="false" placeholder="{{'projectTemplate.addingDate' | translate}}"  [(ngModel)]="item.addingDate"
+                                                    dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="4">{{'projectTemplate.lastUpdateDate' | translate}}</label>
+                                            <p-calendar appendTo="body" id="4"  [showTime]="true" [showSeconds]="false" placeholder="{{'projectTemplate.lastUpdateDate' | translate}}"  [(ngModel)]="item.lastUpdateDate"
+                                                    dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="5">{{'projectTemplate.categoryProjectTemplate' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="categoryProjectTemplates" [(ngModel)]="item.categoryProjectTemplate" id="5" [filter]="true" filterMatchMode="contains"
+                                                [showClear]="true" optionLabel="name" placeholder="{{'projectTemplate.categoryProjectTemplate' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="6">{{'projectTemplate.projectTemplateTags' | translate}}</label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'projectTemplate.projectTemplateTags' | translate}}" id="6" [(ngModel)]="item.projectTemplateTags"
+                                                     />
+                                            
+                                        </div>
+
+
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="7">{{'projectTemplate.subDomainTemplate' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="subDomainTemplates" [(ngModel)]="item.subDomainTemplate" id="7" [filter]="true" filterMatchMode="contains"
+                                                [showClear]="true" optionLabel="name" placeholder="{{'projectTemplate.subDomainTemplate' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="8">{{'projectTemplate.price' | translate}}</label>
+                                            <p-inputNumber class="mb-2 mr-2" id="8" placeholder="{{'projectTemplate.price' | translate}}" [(ngModel)]="item.price"  >
+                                            </p-inputNumber>
+                                            
+                                        </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+                            <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+                        <button pButton pRipple label="Valider" icon="pi pi-check"  (click)="edit()"></button>
+                </div>
+            </ng-template>
+    </p-dialog>

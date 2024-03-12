@@ -1,0 +1,56 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'projectTemplate.tabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="{{'projectTemplate.tabPan' | translate}}">
+                <div class="grid">
+                    <div class="field col-12 md:col-6">
+                        <label for="1">{{'projectTemplate.code' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'projectTemplate.code' | translate}}" autofocus  id="1" [(ngModel)]="item.code">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="2">{{'projectTemplate.name' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'projectTemplate.name' | translate}}" autofocus  id="2" [(ngModel)]="item.name">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="3">{{'projectTemplate.addingDate' | translate}}</label>
+                        <p-calendar id="3" [disabled]="true"  [showTime]="true" [showSeconds]="false" placeholder="{{'projectTemplate.addingDate' | translate}}"  [(ngModel)]="item.addingDate" dateFormat="{{dateFormat}}"></p-calendar>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="4">{{'projectTemplate.lastUpdateDate' | translate}}</label>
+                        <p-calendar id="4" [disabled]="true"  [showTime]="true" [showSeconds]="false" placeholder="{{'projectTemplate.lastUpdateDate' | translate}}"  [(ngModel)]="item.lastUpdateDate" dateFormat="{{dateFormat}}"></p-calendar>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="5">{{'projectTemplate.categoryProjectTemplate' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'projectTemplate.categoryProjectTemplate' | translate}}" autofocus  id="5" [(ngModel)]="item.categoryProjectTemplate.name">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="6">{{'projectTemplate.projectTemplateTags' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'projectTemplate.projectTemplateTags' | translate}}" autofocus  id="6" [(ngModel)]="item.projectTemplateTags">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="7">{{'projectTemplate.subDomainTemplate' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'projectTemplate.subDomainTemplate' | translate}}" autofocus  id="7" [(ngModel)]="item.subDomainTemplate.name">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="8">{{'projectTemplate.price' | translate}}</label>
+                        <p-inputNumber class="mb-2 mr-2" id="8" [disabled]="true" placeholder="{{'projectTemplate.price' | translate}}" [(ngModel)]="item.price"></p-inputNumber>
+                    </div>
+                </div>
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="p-flexbox">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+

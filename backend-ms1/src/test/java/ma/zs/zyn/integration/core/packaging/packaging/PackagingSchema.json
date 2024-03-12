@@ -1,0 +1,16 @@
+{
+    "code": "#string",
+    "description": "#string",
+    "price": "#number",
+    "maxProject": "#number",
+    "categoryPackaging": {"id": "#number"}
+
+}
+
+
+
+
+
+
+
+

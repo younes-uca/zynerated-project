@@ -1,0 +1,17 @@
+{
+    "code": "#string",
+    "name": "#string",
+    "categoryProjectTemplate": {"id": "#number"},
+    "projectTemplateTags": "#string",
+    "subDomainTemplate": {"id": "#number"},
+    "price": "#number"
+
+}
+
+
+
+
+
+
+
+

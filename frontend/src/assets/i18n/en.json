@@ -1,0 +1,437 @@
+{
+    "from-to": "Elements from {first} to {last} (total {totalRecords})",
+    "new" : "New",
+    "search": "Search",
+    "export": "Export",
+    "validate": "Validate",
+    "search": "Seach...",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "creation": "Creation",
+    "list": "List",
+	"actionPermission":{
+        "reference": "Reference",
+        "libelle": "Libelle",
+        "actionPermission": "Action permission",
+        "tabPan": "Action permission",
+        "header": "Liste des action permissions",
+        "deleteActionPermissionConfirmationMessage": "Are you sure you want to delete action permission",
+        "deleteActionPermissionsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "modelPermissionUser":{
+        "actionPermission": "Action permission",
+        "actionPermissionPlaceHolder": "Select a Action permission",
+        "actionPermissionPlaceHolderFilter": "Search by Action permission",
+        "modelPermission": "Model permission",
+        "modelPermissionPlaceHolder": "Select a Model permission",
+        "modelPermissionPlaceHolderFilter": "Search by Model permission",
+        "value": "Value",
+        "user": "User",
+        "userPlaceHolder": "Select a User",
+        "userPlaceHolderFilter": "Search by User",
+        "subAttribute": "Sub attribute",
+        "modelPermissionUser": "Model permission user",
+        "tabPan": "Model permission user",
+        "header": "Liste des model permission users",
+        "deleteModelPermissionUserConfirmationMessage": "Are you sure you want to delete model permission user",
+        "deleteModelPermissionUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+    "role":{
+        "authority": "Authority",
+        "role": "Role",
+        "tabPan": "Role",
+        "header": "Liste des roles",
+        "deleteRoleConfirmationMessage": "Are you sure you want to delete role",
+        "deleteRolesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+
+    "roleUser":{
+        "role": "Role",
+        "rolePlaceHolder": "Select a Role",
+        "rolePlaceHolderFilter": "Search by Role",
+        "user": "User",
+        "userPlaceHolder": "Select a User",
+        "userPlaceHolderFilter": "Search by User",
+        "roleUser": "Role user",
+        "tabPan": "Role user",
+        "header": "Liste des role users",
+        "deleteRoleUserConfirmationMessage": "Are you sure you want to delete role user",
+        "deleteRoleUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "user":{
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "email": "Email",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "username": "Username",
+        "password": "Password",
+        "passwordChanged": "Password changed",
+        "modelPermissionUsers": "Model permission users",
+        "roleUsers": "Role users",
+        "RoleUsersPlaceHolder": "Select multiple Roles",
+        "user": "User",
+        "tabPan": "User",
+        "header": "Liste des users",
+        "deleteUserConfirmationMessage": "Are you sure you want to delete user",
+        "deleteUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "modelPermission":{
+        "reference": "Reference",
+        "libelle": "Libelle",
+        "modelPermission": "Model permission",
+        "tabPan": "Model permission",
+        "header": "Liste des model permissions",
+        "deleteModelPermissionConfirmationMessage": "Are you sure you want to delete model permission",
+        "deleteModelPermissionsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+
+    "subDomainTemplate":{
+        "code": "Code",
+        "name": "Name",
+        "domainTemplate": "Domain template",
+        "domainTemplatePlaceHolder": "Select a Domain template",
+        "domainTemplatePlaceHolderFilter": "Search by Domain template",
+        "subDomainTemplate": "Sub domain template",
+        "tabPan": "Sub domain template",
+        "header": "Liste des sub domain templates",
+        "deleteSubDomainTemplateConfirmationMessage": "Are you sure you want to delete sub domain template",
+        "deleteSubDomainTemplatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "categoryProjectTemplate":{
+        "code": "Code",
+        "name": "Name",
+        "categoryProjectTemplate": "Category project template",
+        "tabPan": "Category project template",
+        "header": "Liste des category project templates",
+        "deleteCategoryProjectTemplateConfirmationMessage": "Are you sure you want to delete category project template",
+        "deleteCategoryProjectTemplatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "paimentCollaboratorState":{
+        "code": "Code",
+        "name": "Name",
+        "paimentCollaboratorState": "Paiment collaborator state",
+        "tabPan": "Paiment collaborator state",
+        "header": "Liste des paiment collaborator states",
+        "deletePaimentCollaboratorStateConfirmationMessage": "Are you sure you want to delete paiment collaborator state",
+        "deletePaimentCollaboratorStatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "project":{
+        "code": "Code",
+        "name": "Name",
+        "generatedDate": "Generated date",
+        "generatedDateMin": "Generated date Min",
+        "generatedDateMax": "Generated date Max",
+        "yaml": "Yaml",
+        "owner": "Owner",
+        "ownerPlaceHolder": "Select a Owner",
+        "ownerPlaceHolderFilter": "Search by Owner",
+        "projectState": "Project state",
+        "projectStatePlaceHolder": "Select a Project state",
+        "projectStatePlaceHolderFilter": "Search by Project state",
+        "project": "Project",
+        "tabPan": "Project",
+        "header": "Liste des projects",
+        "deleteProjectConfirmationMessage": "Are you sure you want to delete project",
+        "deleteProjectsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "projectState":{
+        "code": "Code",
+        "name": "Name",
+        "projectState": "Project state",
+        "tabPan": "Project state",
+        "header": "Liste des project states",
+        "deleteProjectStateConfirmationMessage": "Are you sure you want to delete project state",
+        "deleteProjectStatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "paimentInfluencer":{
+        "name": "Name",
+        "description": "Description",
+        "code": "Code",
+        "influencer": "Influencer",
+        "influencerPlaceHolder": "Select a Influencer",
+        "influencerPlaceHolderFilter": "Search by Influencer",
+        "coupon": "Coupon",
+        "couponPlaceHolder": "Select a Coupon",
+        "couponPlaceHolderFilter": "Search by Coupon",
+        "datePaiement": "Date paiement",
+        "datePaiementMin": "Date paiement Min",
+        "datePaiementMax": "Date paiement Max",
+        "paimentInfluencerState": "Paiment influencer state",
+        "paimentInfluencerStatePlaceHolder": "Select a Paiment influencer state",
+        "paimentInfluencerStatePlaceHolderFilter": "Search by Paiment influencer state",
+        "paimentInfluencer": "Paiment influencer",
+        "tabPan": "Paiment influencer",
+        "header": "Liste des paiment influencers",
+        "deletePaimentInfluencerConfirmationMessage": "Are you sure you want to delete paiment influencer",
+        "deletePaimentInfluencersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "inscriptionCollaborator":{
+        "inscriptionDate": "Inscription date",
+        "inscriptionDateMin": "Inscription date Min",
+        "inscriptionDateMax": "Inscription date Max",
+        "renewDate": "Renew date",
+        "renewDateMin": "Renew date Min",
+        "renewDateMax": "Renew date Max",
+        "packaging": "Packaging",
+        "packagingPlaceHolder": "Select a Packaging",
+        "packagingPlaceHolderFilter": "Search by Packaging",
+        "collaborator": "Collaborator",
+        "collaboratorPlaceHolder": "Select a Collaborator",
+        "collaboratorPlaceHolderFilter": "Search by Collaborator",
+        "inscriptionState": "Inscription state",
+        "inscriptionStatePlaceHolder": "Select a Inscription state",
+        "inscriptionStatePlaceHolderFilter": "Search by Inscription state",
+        "inscriptionCollaborator": "Inscription collaborator",
+        "tabPan": "Inscription collaborator",
+        "header": "Liste des inscription collaborators",
+        "deleteInscriptionCollaboratorConfirmationMessage": "Are you sure you want to delete inscription collaborator",
+        "deleteInscriptionCollaboratorsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "domainTemplate":{
+        "code": "Code",
+        "name": "Name",
+        "domainTemplate": "Domain template",
+        "tabPan": "Domain template",
+        "header": "Liste des domain templates",
+        "deleteDomainTemplateConfirmationMessage": "Are you sure you want to delete domain template",
+        "deleteDomainTemplatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "member":{
+        "description": "Description",
+        "collaborator": "Collaborator",
+        "collaboratorPlaceHolder": "Select a Collaborator",
+        "collaboratorPlaceHolderFilter": "Search by Collaborator",
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "passwordChanged": "Password changed",
+        "username": "Username",
+        "password": "Password",
+        "member": "Member",
+        "tabPan": "Member",
+        "header": "Liste des members",
+        "deleteMemberConfirmationMessage": "Are you sure you want to delete member",
+        "deleteMembersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "inscriptionState":{
+        "code": "Code",
+        "name": "Name",
+        "inscriptionState": "Inscription state",
+        "tabPan": "Inscription state",
+        "header": "Liste des inscription states",
+        "deleteInscriptionStateConfirmationMessage": "Are you sure you want to delete inscription state",
+        "deleteInscriptionStatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "packaging":{
+        "code": "Code",
+        "description": "Description",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "price": "Price",
+        "priceMin": "Price Min",
+        "priceMax": "Price Max",
+        "maxProject": "Max project",
+        "maxProjectMin": "Max project Min",
+        "maxProjectMax": "Max project Max",
+        "categoryPackaging": "Category packaging",
+        "categoryPackagingPlaceHolder": "Select a Category packaging",
+        "categoryPackagingPlaceHolderFilter": "Search by Category packaging",
+        "packaging": "Packaging",
+        "tabPan": "Packaging",
+        "header": "Liste des packagings",
+        "deletePackagingConfirmationMessage": "Are you sure you want to delete packaging",
+        "deletePackagingsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "categoryPackaging":{
+        "code": "Code",
+        "name": "Name",
+        "categoryPackaging": "Category packaging",
+        "tabPan": "Category packaging",
+        "header": "Liste des category packagings",
+        "deleteCategoryPackagingConfirmationMessage": "Are you sure you want to delete category packaging",
+        "deleteCategoryPackagingsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "coupon":{
+        "code": "Code",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "name": "Name",
+        "packaging": "Packaging",
+        "packagingPlaceHolder": "Select a Packaging",
+        "packagingPlaceHolderFilter": "Search by Packaging",
+        "influencer": "Influencer",
+        "influencerPlaceHolder": "Select a Influencer",
+        "influencerPlaceHolderFilter": "Search by Influencer",
+        "pourcentageCoupon": "Pourcentage coupon",
+        "pourcentageCouponMin": "Pourcentage coupon Min",
+        "pourcentageCouponMax": "Pourcentage coupon Max",
+        "pourcentageInfluencer": "Pourcentage influencer",
+        "pourcentageInfluencerMin": "Pourcentage influencer Min",
+        "pourcentageInfluencerMax": "Pourcentage influencer Max",
+        "usingNumber": "Using number",
+        "usingNumberMin": "Using number Min",
+        "usingNumberMax": "Using number Max",
+        "coupon": "Coupon",
+        "tabPan": "Coupon",
+        "header": "Liste des coupons",
+        "deleteCouponConfirmationMessage": "Are you sure you want to delete coupon",
+        "deleteCouponsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "collaborator":{
+        "name": "Name",
+        "code": "Code",
+        "packaging": "Packaging",
+        "packagingPlaceHolder": "Select a Packaging",
+        "packagingPlaceHolderFilter": "Search by Packaging",
+        "member": "Member",
+        "memberPlaceHolder": "Select a Member",
+        "memberPlaceHolderFilter": "Search by Member",
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "passwordChanged": "Password changed",
+        "username": "Username",
+        "password": "Password",
+        "collaborator": "Collaborator",
+        "tabPan": "Collaborator",
+        "header": "Liste des collaborators",
+        "deleteCollaboratorConfirmationMessage": "Are you sure you want to delete collaborator",
+        "deleteCollaboratorsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "influencer":{
+        "nickName": "Nick name",
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "passwordChanged": "Password changed",
+        "username": "Username",
+        "password": "Password",
+        "influencer": "Influencer",
+        "tabPan": "Influencer",
+        "header": "Liste des influencers",
+        "deleteInfluencerConfirmationMessage": "Are you sure you want to delete influencer",
+        "deleteInfluencersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "paimentCollaborator":{
+        "name": "Name",
+        "description": "Description",
+        "code": "Code",
+        "collaborator": "Collaborator",
+        "collaboratorPlaceHolder": "Select a Collaborator",
+        "collaboratorPlaceHolderFilter": "Search by Collaborator",
+        "coupon": "Coupon",
+        "couponPlaceHolder": "Select a Coupon",
+        "couponPlaceHolderFilter": "Search by Coupon",
+        "datePaiement": "Date paiement",
+        "datePaiementMin": "Date paiement Min",
+        "datePaiementMax": "Date paiement Max",
+        "paimentCollaboratorState": "Paiment collaborator state",
+        "paimentCollaboratorStatePlaceHolder": "Select a Paiment collaborator state",
+        "paimentCollaboratorStatePlaceHolderFilter": "Search by Paiment collaborator state",
+        "paimentCollaborator": "Paiment collaborator",
+        "tabPan": "Paiment collaborator",
+        "header": "Liste des paiment collaborators",
+        "deletePaimentCollaboratorConfirmationMessage": "Are you sure you want to delete paiment collaborator",
+        "deletePaimentCollaboratorsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "projectTemplate":{
+        "code": "Code",
+        "name": "Name",
+        "addingDate": "Adding date",
+        "addingDateMin": "Adding date Min",
+        "addingDateMax": "Adding date Max",
+        "lastUpdateDate": "Last update date",
+        "lastUpdateDateMin": "Last update date Min",
+        "lastUpdateDateMax": "Last update date Max",
+        "categoryProjectTemplate": "Category project template",
+        "categoryProjectTemplatePlaceHolder": "Select a Category project template",
+        "categoryProjectTemplatePlaceHolderFilter": "Search by Category project template",
+        "projectTemplateTags": "Project template tags",
+        "subDomainTemplate": "Sub domain template",
+        "subDomainTemplatePlaceHolder": "Select a Sub domain template",
+        "subDomainTemplatePlaceHolderFilter": "Search by Sub domain template",
+        "price": "Price",
+        "priceMin": "Price Min",
+        "priceMax": "Price Max",
+        "projectTemplate": "Project template",
+        "tabPan": "Project template",
+        "header": "Liste des project templates",
+        "deleteProjectTemplateConfirmationMessage": "Are you sure you want to delete project template",
+        "deleteProjectTemplatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "paimentInfluencerState":{
+        "code": "Code",
+        "name": "Name",
+        "paimentInfluencerState": "Paiment influencer state",
+        "tabPan": "Paiment influencer state",
+        "header": "Liste des paiment influencer states",
+        "deletePaimentInfluencerStateConfirmationMessage": "Are you sure you want to delete paiment influencer state",
+        "deletePaimentInfluencerStatesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+

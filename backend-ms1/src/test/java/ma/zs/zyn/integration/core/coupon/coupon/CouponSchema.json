@@ -1,0 +1,18 @@
+{
+    "code": "#string",
+    "name": "#string",
+    "packaging": {"id": "#number"},
+    "influencer": {"id": "#number"},
+    "pourcentageCoupon": "#number",
+    "pourcentageInfluencer": "#number",
+    "usingNumber": "#number"
+
+}
+
+
+
+
+
+
+
+

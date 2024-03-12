@@ -1,0 +1,67 @@
+        <p-dialog [(visible)]="createDialog" [style]="{width: '70vw'}" header="{{'inscriptionCollaborator.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                        <p-tabView>
+                            <p-tabPanel header="{{'inscriptionCollaborator.tabPan' | translate}}">
+                                <div class="grid">
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="1">{{'inscriptionCollaborator.inscriptionDate' | translate}}</label>
+                                                    <p-calendar appendTo="body" id="1"  [showTime]="true" [showSeconds]="false" placeholder="{{'inscriptionCollaborator.inscriptionDate' | translate}}"  [(ngModel)]="item.inscriptionDate"
+                                                            dateFormat="{{dateFormat}}"  >
+                                                    </p-calendar>
+                                                    
+                                                </div>
+
+                                                <div class="field col-12 md:col-6">
+                                                    <label for="2">{{'inscriptionCollaborator.renewDate' | translate}}</label>
+                                                    <p-calendar appendTo="body" id="2"  [showTime]="true" [showSeconds]="false" placeholder="{{'inscriptionCollaborator.renewDate' | translate}}"  [(ngModel)]="item.renewDate"
+                                                            dateFormat="{{dateFormat}}"  >
+                                                    </p-calendar>
+                                                    
+                                                </div>
+
+                                            <div class="field col-11 md:col-6">
+                                                <label for="3">{{'inscriptionCollaborator.packaging' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="packagings" [(ngModel)]="item.packaging" id="3" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="id" placeholder="{{'inscriptionCollaborator.packaging' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+                                            <div class="field col-11 md:col-6">
+                                                <label for="4">{{'inscriptionCollaborator.collaborator' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="collaborators" [(ngModel)]="item.collaborator" id="4" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="name" placeholder="{{'inscriptionCollaborator.collaborator' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+                                            <div class="field col-11 md:col-6">
+                                                <label for="5">{{'inscriptionCollaborator.inscriptionState' | translate}}</label>
+                                                <p-dropdown  appendTo="body"  [options]="inscriptionStates" [(ngModel)]="item.inscriptionState" id="5" [filter]="true" filterMatchMode="contains"
+                                                        [showClear]="true" optionLabel="name" placeholder="{{'inscriptionCollaborator.inscriptionState' | translate}}"  >
+                                                </p-dropdown>
+                                                
+                                            </div>
+                                                <div class="col-1">
+                                                    <label></label>
+                                                    <button pButton pRipple type="button" icon="pi pi-plus" (click)="openCreateInscriptionState('InscriptionState')" class="p-button-success one-colonne-btn-success-align"></button>
+                                                </div>
+                                </div>
+                            </p-tabPanel>
+
+                        </p-tabView>
+
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+
+                            <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="save()"></button>
+
+
+                            <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideCreateDialog()"></button>
+
+
+                </div>
+            </ng-template>
+
+    </p-dialog>

@@ -1,0 +1,77 @@
+        <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'paimentCollaborator.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+            <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'paimentCollaborator.tabPan' | translate}}">
+                        <div class="grid">
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="1">{{'paimentCollaborator.name' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'paimentCollaborator.name' | translate}}" id="1" [(ngModel)]="item.name"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validPaimentCollaboratorName}"  />
+                                            <small class='p-error' *ngIf='!validPaimentCollaboratorName'>Name est obligatoire.</small>
+                                        </div>
+
+
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="2">{{'paimentCollaborator.description' | translate}}</label>
+                                            <textarea id="2" pInputTextarea rows="5" cols="30" placeholder="{{'paimentCollaborator.description' | translate}}"  [(ngModel)]="item.description"
+                                                     ></textarea>
+                                            
+                                        </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="3">{{'paimentCollaborator.code' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'paimentCollaborator.code' | translate}}" id="3" [(ngModel)]="item.code"
+                                                    [ngClass]="{'ng-invalid ng-dirty' : !validPaimentCollaboratorCode}"  />
+                                            <small class='p-error' *ngIf='!validPaimentCollaboratorCode'>Code est obligatoire.</small>
+                                        </div>
+
+
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="4">{{'paimentCollaborator.collaborator' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="collaborators" [(ngModel)]="item.collaborator" id="4" [filter]="true" filterMatchMode="contains"
+                                                [showClear]="true" optionLabel="name" placeholder="{{'paimentCollaborator.collaborator' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="5">{{'paimentCollaborator.coupon' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="coupons" [(ngModel)]="item.coupon" id="5" [filter]="true" filterMatchMode="contains"
+                                                [showClear]="true" optionLabel="name" placeholder="{{'paimentCollaborator.coupon' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="6">{{'paimentCollaborator.datePaiement' | translate}}</label>
+                                            <p-calendar appendTo="body" id="6"  [showTime]="true" [showSeconds]="false" placeholder="{{'paimentCollaborator.datePaiement' | translate}}"  [(ngModel)]="item.datePaiement"
+                                                    dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="7">{{'paimentCollaborator.paimentCollaboratorState' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="paimentCollaboratorStates" [(ngModel)]="item.paimentCollaboratorState" id="7" [filter]="true" filterMatchMode="contains"
+                                                [showClear]="true" optionLabel="code" placeholder="{{'paimentCollaborator.paimentCollaboratorState' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+            </ng-template>
+
+            <ng-template pTemplate="footer" >
+                <div class="p-flexbox">
+                            <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+                        <button pButton pRipple label="Valider" icon="pi pi-check"  (click)="edit()"></button>
+                </div>
+            </ng-template>
+    </p-dialog>

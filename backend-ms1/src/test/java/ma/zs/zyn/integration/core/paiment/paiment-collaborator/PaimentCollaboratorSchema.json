@@ -1,0 +1,17 @@
+{
+    "name": "#string",
+    "description": "#string",
+    "code": "#string",
+    "collaborator": {"id": "#number"},
+    "coupon": {"id": "#number"},
+    "paimentCollaboratorState": {"id": "#number"}
+
+}
+
+
+
+
+
+
+
+

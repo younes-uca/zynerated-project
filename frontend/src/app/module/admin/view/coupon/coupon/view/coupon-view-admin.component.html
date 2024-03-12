@@ -1,0 +1,60 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'coupon.tabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="{{'coupon.tabPan' | translate}}">
+                <div class="grid">
+                    <div class="field col-12 md:col-6">
+                        <label for="1">{{'coupon.code' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'coupon.code' | translate}}" autofocus  id="1" [(ngModel)]="item.code">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="2">{{'coupon.dateDebut' | translate}}</label>
+                        <p-calendar id="2" [disabled]="true"  [showTime]="true" [showSeconds]="false" placeholder="{{'coupon.dateDebut' | translate}}"  [(ngModel)]="item.dateDebut" dateFormat="{{dateFormat}}"></p-calendar>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="3">{{'coupon.dateFin' | translate}}</label>
+                        <p-calendar id="3" [disabled]="true"  [showTime]="true" [showSeconds]="false" placeholder="{{'coupon.dateFin' | translate}}"  [(ngModel)]="item.dateFin" dateFormat="{{dateFormat}}"></p-calendar>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="4">{{'coupon.name' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'coupon.name' | translate}}" autofocus  id="4" [(ngModel)]="item.name">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="5">{{'coupon.packaging' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'coupon.packaging' | translate}}" autofocus  id="5" [(ngModel)]="item.packaging.id">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="6">{{'coupon.influencer' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'coupon.influencer' | translate}}" autofocus  id="6" [(ngModel)]="item.influencer.id">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="7">{{'coupon.pourcentageCoupon' | translate}}</label>
+                        <p-inputNumber class="mb-2 mr-2" id="7" [disabled]="true" placeholder="{{'coupon.pourcentageCoupon' | translate}}" [(ngModel)]="item.pourcentageCoupon"></p-inputNumber>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="8">{{'coupon.pourcentageInfluencer' | translate}}</label>
+                        <p-inputNumber class="mb-2 mr-2" id="8" [disabled]="true" placeholder="{{'coupon.pourcentageInfluencer' | translate}}" [(ngModel)]="item.pourcentageInfluencer"></p-inputNumber>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="9">{{'coupon.usingNumber' | translate}}</label>
+                        <p-inputNumber class="mb-2 mr-2" id="9" [disabled]="true" placeholder="{{'coupon.usingNumber' | translate}}" [(ngModel)]="item.usingNumber"></p-inputNumber>
+                    </div>
+                </div>
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="p-flexbox">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+

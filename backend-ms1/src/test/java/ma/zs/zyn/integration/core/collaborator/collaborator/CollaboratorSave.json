@@ -1,0 +1,22 @@
+{
+    "name": "name-1",
+    "code": "code-1",
+    "packaging": {"id": "1"},
+    "member": {"id": "1"},
+    "credentialsNonExpired": "true",
+    "enabled": "true",
+    "accountNonExpired": "true",
+    "accountNonLocked": "true",
+    "passwordChanged": "true",
+    "username": "username-1",
+    "password": "password-1"
+
+}
+
+
+
+
+
+
+
+
